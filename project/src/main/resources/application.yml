@@ -1,0 +1,20 @@
+server:
+  port: 8000
+
+spring:
+  mvc:
+    static-path-pattern: /static/**
+
+  security:
+    user:
+      name: test@naver.com
+      password: 1q2w3e4r!
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://database-1.cwl50jw04e96.ap-northeast-2.rds.amazonaws.com:3306/project
+    username: admin
+    password: 1Q2W3E4R!
+
+mybatis:
+  mapper-locations:
+    - /mappers/*.xml
